@@ -5,13 +5,11 @@ Use Guidance & install steps: you can get from:
 
 See live examples here: <a href="http://nakupanda.github.io/bootstrap3-dialog/">http://nakupanda.github.io/bootstrap3-dialog/</a>
 
-================
-
 ## 修订原因 
 
 项目组使用Dialog控件用做信息采集，主要采用load信息录入页面方式。
-> 根据信息录入页面的大小需要定制Dialog的显示大小
-> 信息录入页面如果包含多标签，Dialog的自适应不生效（仅显示一部分页面）
+> * 根据信息录入页面的大小需要定制Dialog的显示大小
+> * 信息录入页面如果包含多标签，Dialog的自适应不生效（仅显示一部分页面）
 
 ## 用于信息采集的典型Dialog
 |大小|css样式|信息展示样式|CSS样式|
@@ -27,12 +25,11 @@ See live examples here: <a href="http://nakupanda.github.io/bootstrap3-dialog/">
 1. 送入参数dlgStyle,用来定义dialog的css样式
 2. 送入参数messageStyle,用来定义dialog内的message <div> 的css样式
 
-
+## 示例 待补充
 CSS层及结构和 本次添加的css样式示意图如下：
 
 ![dom 层级及其css样式](http://om49hkcv7.bkt.clouddn.com//image/bootstrap-dialogimage2017-3-31%2015-23-55.png)
 
-## 示例 待补充
 ================
 
 Licensed under The MIT License.
