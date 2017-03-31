@@ -1,74 +1,40 @@
 bootstrap-dialog
 ================
-
-[![Latest release](https://img.shields.io/github/release/nakupanda/bootstrap3-dialog.svg)](https://github.com/nakupanda/bootstrap3-dialog/releases/latest)
-
-Make use of Bootstrap Modal more monkey-friendly.
+Use Guidance & install steps: you can get from:
+[original nakupanda bootstrap3-dialog](https://github.com/akinoniku)
 
 See live examples here: <a href="http://nakupanda.github.io/bootstrap3-dialog/">http://nakupanda.github.io/bootstrap3-dialog/</a>
 
-Please note that this project is for <a href="http://getbootstrap.com/"><strong>Bootstrap 3</strong></a>.
+================
 
-Thanks for [akinoniku](https://github.com/akinoniku)'s suggestions on dialog appearance.
+## 修订原因 
+
+项目组使用Dialog控件用做信息采集，主要采用load信息录入页面方式。
+> 根据信息录入页面的大小需要定制Dialog的显示大小
+> 信息录入页面如果包含多标签，Dialog的自适应不生效（仅显示一部分页面）
 
 ================
 
-## Ask a question
+## 用于信息采集的典型Dialog
+|大小|css样式|信息展示样式|CSS样式|
+|----|------|-----------|-------|
+|最大|dlg-max|自动高度|dlg-max-auto|
+|最大|dlg-max|固定高度|dlg-max-fixed|
+|大|dlg-lg|自动高度|dlg-lg-auto|
+|大|dlg-lg|固定高度|dlg-lg-auto|
+|普通|dlg-normal|自动高度|dlg-normal-auto|
+|普通|dlg-normal|固定高度|dlg-normal-auto|
 
-It's recommended to provide online examples when asking questions or reporting bugs.
-Fork this all-ready jsfiddle and start writing your example:
-<a href="https://jsfiddle.net/o5k0eaws/1/">http://jsfiddle.net/o5k0eaws/1/</a>
-
-================
-
-## Use Guidances from contributors
-
-<a href="https://gist.github.com/Genkilabs/bdcc5f62c5b46a8e0904">How to use bootstrap-dialog as Rails 4 confirm</a> - @[Genkilabs](https://github.com/Genkilabs)
-
-================
-## Reference to CDN
-
-```
-https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css
-https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js
-```
-================
-
-## Install using Bower
-
-```
-bower install bootstrap-dialog
-```
-
-Or
-
-```
-bower install bootstrap3-dialog
-```
+.net/o5k0eaws/1/">http://jsfiddle.net/o5k0eaws/1/</a>
 
 ================
+## 使用说明
+1. 送入参数dlgStyle,用来定义dialog的css样式
+2. 送入参数messageStyle,用来定义dialog内的message <div> 的css样式
 
-## Install using npm
 
-```
-npm install --save bootstrap3-dialog
-```
-
-================
-
-## Build instructions:
-
-Prepare:
-
-```
-npm install
-```
-
-Build:
-
-```
-gulp dist
-```
+CSS层及结构和 本次添加的css样式示意图如下：
+![dom 层级及其css样式](http://om49hkcv7.bkt.clouddn.com//image/bootstrap-dialogimage2017-3-31%2015-23-55.png)
 
 ================
 
