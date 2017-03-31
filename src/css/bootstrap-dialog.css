@@ -109,3 +109,34 @@
     transform: rotate(359deg);
   }
 }
+/* add by stone, dialog used for form input */
+.dlg-max{
+    width: 100%;
+}
+.dlg-max-auto{
+    min-height: 45vh;
+    max-height: 86vh;
+}
+.dlg-max-fixed{
+    height: 86vh;
+}
+.dlg-normal{
+    width: 50%;
+}
+.dlg-normal-auto{
+    min-height: 30vh;
+    max-height: 86vh;
+}
+.dlg-normal-fixed{
+    height: 50vh;
+}
+.dlg-lg{
+    width: 80%;
+}
+.dlg-lg-auto{
+    min-height: 45vh;
+    max-height: 86vh;
+}
+.dlg-lg-fixed{
+    height: 70vh;
+}

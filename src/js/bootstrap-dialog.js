@@ -521,6 +521,23 @@
 
             return this;
         },
+        getContentMessage: function() {
+            return this.$message;
+        },
+        getDlgStyle: function () {
+            return this.options.dlgStyle;
+        },
+        setDlgStyle: function (style) {
+            this.options.dlgStyle = style;
+            return this;
+        },
+        getMessageStyle: function () {
+            return this.options.messageStyle;
+        },
+        setMessageStyle: function (style) {
+            this.options.messageStyle = style;
+            return this;
+        },
         getSize: function () {
             return this.options.size;
         },
@@ -533,6 +550,19 @@
         updateSize: function () {
             if (this.isRealized()) {
                 var dialog = this;
+                // set dialog size & message style
+                // message style: height
+                var dlgStyle = this.getDlgStyle();
+                var messageStyle = this.getMessageStyle();
+                if (dlgStyle) {
+                    this.getModalDialog().addClass(dlgStyle);
+                    if (messageStyle) {
+                        this.getContentMessage().children().addClass(dlgStyle + "-" + messageStyle);
+                    } else {
+                        this.getContentMessage().children().addClass(dlgStyle + "-auto");
+                    }
+                }
+
 
                 // Dialog size
                 this.getModal().removeClass(BootstrapDialog.SIZE_NORMAL)
@@ -798,6 +828,7 @@
             var $message = $('<div></div>');
             $message.addClass(this.getNamespace('message'));
 
+            this.$message = $message； //add by stone
             return $message;
         },
         createFooterContent: function () {
